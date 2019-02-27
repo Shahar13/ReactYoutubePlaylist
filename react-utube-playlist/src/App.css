@@ -133,6 +133,7 @@ A:hover{
   text-align: center;
   line-height: 30px;
   font-size: 16px;
+  left: 0;
 }
 
 .btn_close_lyrics{

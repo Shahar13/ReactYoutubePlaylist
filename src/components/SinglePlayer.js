@@ -11,7 +11,7 @@ class SinglePalyer extends React.Component {
             username: "Username", 
             password: "",
             garbageState: "",
-            displayMode: false,
+            isShow: false,
         }
         this.openLyrics = this.openLyrics.bind(this);
         this.closeLyrics = this.closeLyrics.bind(this);
@@ -29,10 +29,10 @@ class SinglePalyer extends React.Component {
 
     openLyrics() {
         // document.querySelector('.lyrics').style.display = 'block';
-        this.setState({displayMode:true})
+        this.setState({isShow:true})
     }
     closeLyrics() {
-        this.setState({displayMode:false})
+        this.setState({isShow:false})
     }       
     
 
@@ -52,7 +52,7 @@ class SinglePalyer extends React.Component {
                 <div onClick={()=>{this.openLyrics()}} title="Add Lyrics">+ Lyrics</div>
               </div>
               
-              <Lyrics isShow={this.state.displayMode} closeLyrics={this.closeLyrics}/>
+              <Lyrics isShow={this.state.isShow} closeLyrics={this.closeLyrics}/>
 
             </div>
         )

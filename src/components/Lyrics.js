@@ -43,7 +43,7 @@ class Lyrics extends React.Component {
             <div className="lyrics">
                 {/* LYRICS */}
 
-                {/* <div onClick={this.closeLyrics} style={{dispaly: `${this.state.displayMode}%`}} className="btn_close_lyrics"> */}
+                {/* <div onClick={this.closeLyrics} style={{dispaly: `${this.state.displayMode}`}} className="btn_close_lyrics"> */}
                 {/* <div onClick={this.closeLyrics} className="btn_close_lyrics"> */}
                 <div onClick={()=>this.props.closeLyrics()} className="btn_close_lyrics">
                     X

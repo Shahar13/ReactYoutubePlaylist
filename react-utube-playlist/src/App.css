@@ -1,0 +1,174 @@
+HTML, BODY{
+  margin: 0;
+  padding: 0;
+  background: #282c34;
+  color: #ffffff;
+}
+
+A{
+  text-decoration: none;
+  color: #ffffff;
+}
+A:hover{
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+.page {
+  /* text-align: center; */
+  border: solid 1px red;
+  padding: 2%;
+  overflow: hidden;
+
+}
+
+.player_frame{
+  width: 30%;
+  margin: 1%;
+  background: grey;
+  float: left;
+}
+
+.btn_add_video{
+  background: lightgrey;
+  color: #000000;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 16px;
+  margin: 10px;
+  padding: 3px 10px 5px 10px;
+  cursor: pointer;
+  /* width:2%; */
+  text-align: center;
+  float: right;
+  border: solid 1px grey;
+  transition: all 0.3s;
+}
+
+.btn_add_video:hover{
+  box-shadow: 2px 2px 8px #ffffff;
+  /* color: #313131 */
+  color: blue;
+}
+/* @keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  /* background-color: #2196F3; */
+  padding: 10px;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.single_player {
+  background-color: #000000;
+  text-align: center;
+  padding: 0 0 10px 0;
+  font-size: 20px;
+  border: solid 1px grey;
+  border-radius: 5px;
+  box-shadow: 2px 2px 6px #000000;
+  /* width: 20%; */
+}
+
+.player{
+  max-width: 230px;
+  margin-top: 3px;
+}
+
+.flex_controllers {
+  display: flex;
+  justify-content: center;
+  /* border: solid 1px red; */
+}
+
+.flex_controllers > DIV {
+  background: lightgrey;
+  color: #000000;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 16px;
+  margin: 0 10px;
+  padding: 3px 10px 5px 10px;
+  cursor: pointer;
+  white-space: nowrap;
+  border: solid 1px grey;
+  transition: all 0.3s;
+}
+
+.flex_controllers > DIV:hover{
+  box-shadow: 2px 2px 8px #ffffff;
+  /* color: #313131 */
+  color: blue;
+}
+/* .flex_controllers > DIV > VIDEO {
+  border: solid 1px red;
+} */
+
+.lyrics{
+  /* display: none; */
+  position: absolute;
+  z-index: 2;
+  width: 82%;
+  top: 4%;
+  background: #f1f1f1;
+  padding: 20px;
+  color: #000000;
+  margin: 0 2%;
+  border-radius: 7px;
+  border: solid 1px grey;
+  box-shadow: 2px 2px 7px #000000;
+  text-align: center;
+  line-height: 30px;
+  font-size: 16px;
+}
+
+.btn_close_lyrics{
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  float: right;
+  margin: -10px 0 10px 0;
+  background: #ffffff;
+  padding: 0 8px;
+  border-radius: 4px;
+  box-shadow: 1px 2px 4px grey;
+}
+
+@media screen and (max-width: 990px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .player{
+    /* width: 100%; */
+    /* margin-top: 3px; */
+    max-width: 100%;
+  }
+}
